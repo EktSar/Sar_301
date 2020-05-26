@@ -1,0 +1,111 @@
+/* Мониторы 1200 - 1920 px */ /* Extra large ширина 1140px */
+@media screen and (max-width: 1920px) {
+
+}
+
+/* Мониторы 992 - 1199 px */ /* Large ширина 960px */
+@media screen and (max-width: 1199px) {
+    .hide {display: none;}
+    .logoSUSU-small {display: flex;}
+    /* Отступ между названием и рейтингом */
+    .months-item__group:first-child {width: 20rem;}
+}
+
+/* Мониторы 768 - 991 px */ /* Medium ширина 720px */
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    /* Главный экран */
+    .menu {
+        display: none;
+    }
+
+    .btnMenu {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+
+    .btnMenu:hover {
+        transition: all 0.3s ease;
+    }
+
+    .logoSUSU {
+        margin: -60px;
+    }
+
+    /* Кнопка Подробнее на главной странице */
+    .more {
+        padding-top: 1rem;
+        position: relative;
+        text-align: right;
+        display: block;
+    }
+
+    /* Соревнования отдельная */
+    .competitions__additional {display: none;}
+
+    /* Отступ между названием и рейтингом */
+    .months-item__group:first-child {width: 24rem;}
+}
+
+/* Мониторы 576 - 767 px */ /* Small ширина 540px */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 37px;
+        padding: 20px 0;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+    }
+    h3 span {
+        padding-left: 0;
+    }
+
+    .newsOne figure {
+        width: auto;
+        float: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .copyright__text {font-size: 14px;}
+
+    /* СОРЕВНОВАНИЯ */
+    .competitions__competition_item {padding-bottom: 35px;}
+
+    /* Отступ между названием и рейтингом */
+    .months-item__group:first-child {width: 15rem;}
+}
+
+/* Мониторы 320 - 575 px */ /* Extra small ширина None (auto) */
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    /* Страница администрирования */
+    .admin-btn {width: 100%;}
+    .admin-menu {flex-direction: column;}
+
+    /* Показ рейтинга по соревнованиям */
+    .months-item {height: 200px;}
+    .months-item__wrapper {flex-direction: column;}
+    .months-item__wrapper-comp {flex-direction: column;}
+    .months-item__group:first-child {width: auto;}
+    .months-item__group {margin-bottom: 1rem;}
+    .months-item__comp{font-size: 14px;}
+    .months-item__toggle {margin-left: unset;}
+}
